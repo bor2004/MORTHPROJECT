@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Header Styling */
+header {
+    background-color: #004d61;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #00d1b2;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 77, 97, 0.6), rgba(0, 77, 97, 0.6)), url('images/hotel-hero.jpg') no-repeat center center/cover;
+    height: 90vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #00d1b2;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #00917c;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.service {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* About and Contact Sections */
+.about, .contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+.about h1, .contact h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #004d61;
+}
+
+.about p, .contact p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #004d61;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #00d1b2;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
